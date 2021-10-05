@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +7,37 @@
 	<title>問題2 | Quiz</title>
 
 	<link rel="stylesheet" href="style.css">
+	<script src="questions.js" defer></script>
 </head>
 <body>
-	<h1>Quiz</h1>
-	<h2>問題1</h2>
-	<p>
-		市川喜康がSMAPへ提供した楽曲「オレンジ」には、続きの楽曲がある。「オレンジ」の続きとして正しいのはどれ？
-	</p>
-	<h3>選択肢</h3>
-	<ol  type="A">
-		<li>Wonderful Life</li>
-		<li>Song2 ～the sequel to that～</li>
-		<li>夏日憂歌</li>
-		<li>シャンプー3つ</li>
-	</ol>
+	<div id="main">
+		<h1>Quiz</h1>
 
-	<h2>答え</h2>
-	<p>
-		B. Song2 ～the sequel to that～  <br>
-		ちなみに、Song2の後にも続きがあり、それがCの夏日憂歌(サマータイムブルース)になります。これら三部作はファンの間では有名です。SMAPは解散してしまいましたが、これら三部作は哀愁があり、たまに聴きたくなります。
-	</p>
-	<a href="index.html">戻る</a>
+		<div class="section">
+			<h2>問題6</h2>
+			<p>
+				市川喜康がSMAPへ提供した楽曲「オレンジ」には、続きの楽曲がある。「オレンジ」の続きとして正しいのはどれ？
+			</p>
+			<h3>選択肢</h3>
+			<ol  class="answers" data-id='question6'>
+				<li data-answer='A'>Wonderful Life</li>
+				<li data-answer='B'>Song2 ～the sequel to that～</li>
+				<li data-answer='C'>夏日憂歌</li>
+				<li data-answer='D'>シャンプー3つ</li>
+			</ol>
+		</div>
+
+		<div id="section-correct-answer" class="section">
+			<h2>答え</h2>
+			<p>
+				<span id="correct-answer">B. Song2 ～the sequel to that～</span><br>
+				ちなみに、Song2の後にも続きがあり、それがCの夏日憂歌(サマータイムブルース)になります。これら三部作はファンの間では有名です。SMAPは解散してしまいましたが、これら三部作は哀愁があり、たまに聴きたくなります。
+			</p>
+		</div>
+
+		<div class="section">
+			<a href="index.html">戻る</a>
+		</div>
+	</div>
 </body>
 </html>
